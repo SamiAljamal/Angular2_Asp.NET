@@ -1,7 +1,14 @@
 ﻿<p>This component demonstrates fetching data from the server.</p>
-<p *ngIf="!forecasts"><em>Loading...</em></p>
+<p *ngIf="!recipes"><em>Loading...</em></p>
 
 table class='table' *ngIf="recipes">
+<div>
+    <div class="form-group">
+        <label for="name">Recipe:</label>
+        <input type="text" class="form-control input-lg" id="name" placeholder="Name" #addName>
+    </div>
+    <button (click)=addRecipe(name1.value) class="btn btn-primary">add</button>
+</div>
 <table>
 <thead>
     <tr>
