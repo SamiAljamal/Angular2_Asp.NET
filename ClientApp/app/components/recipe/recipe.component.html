@@ -1,0 +1,17 @@
+﻿<p>This component demonstrates fetching data from the server.</p>
+<p *ngIf="!forecasts"><em>Loading...</em></p>
+
+table class='table' *ngIf="recipes">
+<table>
+<thead>
+    <tr>
+        <th>name</th>
+        
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let recipe of recipes">
+        <td>{{ recipe.name}}</td>
+    </tr>
+</tbody>
+</table>
